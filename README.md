@@ -16,3 +16,9 @@ This tool uses python3. If you haven't installed python3 on your computer do it!
 5. In config.ini change the host_ip to match RPi's IP. You may type `hostname -I` in RPi's terminal or SSH client to find the IP.
 6. Run the script by double-clicking the main.py script and control the relayboard with your key presses.
 + If you run in to an error, try typing `sudo pigpiod` in RPi's terminal or SSH client.
+
+### Run on reboot
+1. Type in RPi's terminal or SSH client `sudo nano /etc/rc.local`
+2. Type on top of exit 0 line `sudo pigpiod`
+3. Ctrl+X -> Y -> Enter
+4. `sudo reboot`
