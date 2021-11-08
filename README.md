@@ -8,4 +8,11 @@ This repository contains four items. Main.py is the main script that gets config
 First things first: if you have not enabled remote GPIO from RPi:s configurations, do it now! Hit the RPi's terminal and type `sudo raspi-config`. Go to Interface Options and select Remote GPIO. Enable remote GPIO. Finish.
 
 ### Things on your remote device (in this case a computer)
-
+This tool uses python3. If you haven't installed python3 on your computer do it! Install pip aswell. If you are lacking know-how try Google.
+1. Copy this repository and unzip it.
+2. If you are using Mac or Linux use Terminal. On Windows you may use PowerShell.
+3. type `pip install -r requirements.txt`
+4. Go to config.ini file and make the changes you want. Hotkeys are by default 1,2,3,...8. If you want to use time delay, type `True`. This put relay on for certain amount of milliseconds and then put it off. Change the amount of milliseconds in timedelaymillis.
+5. In config.ini change the host_ip to match RPi's IP. You may type `hostname -I` in RPi's terminal or SSH client to find the IP.
+6. Run the script by double-clicking the main.py script and control the relayboard with your key presses.
++ If you run in to an error, try typing `sudo pigpiod` in RPi's terminal or SSH client.
