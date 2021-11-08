@@ -62,4 +62,8 @@ keyboard.add_hotkey(ch6_hotkey, lambda: switch(ch6))
 keyboard.add_hotkey(ch7_hotkey, lambda: switch(ch7))
 keyboard.add_hotkey(ch8_hotkey, lambda: switch(ch8))
 
-keyboard.wait()
+def wait():
+        keyboard.wait()
+
+if __name__ == "__main__":
+        wait()
