@@ -7,4 +7,5 @@ This repository contains four items. Main.py is the main script that gets config
 ### Setting configurations on Raspberry Pi
 First things first: if you have not enabled remote GPIO from RPi:s configurations, do it now! Hit the RPi's terminal and type `sudo raspi-config`. Go to Interface Options and select Remote GPIO. Enable remote GPIO. Finish.
 
-### 
+### Things on your remote device (in this case a computer)
+
